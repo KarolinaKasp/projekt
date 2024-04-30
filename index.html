@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakeYouUp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>MakeYouUp</h1>
+    </header>
+    <!-- MAIN PAGE -->
+    <main class="container" id="main">
+      <h2>Foundations</h2>
+      <section id="grid">
+        <div class="product">
+          <button id="product1">
+            <img
+            id="prd1_img"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+            alt="Product 1"
+            />
+          </button>
+          <div>
+            <h2 id="prd1_name">Product 1</h2>
+            <h3>price: $<placeholder id="prd1_price"></placeholder></h3>
+            <p>
+              brand: <placeholder id="prd1_brand"></placeholder><br />
+              category: <placeholder id="prd1_cat"></placeholder><br />
+          </p>
+        </div>
+      </div>
+      <div class="product">
+        <button id="product2">
+          <img
+            id="prd2_img"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+            alt="Product 2"
+            />
+          </button>
+          <div>
+          <h2 id="prd2_name">Product 2</h2>
+          <h3>price: $<placeholder id="prd2_price"></placeholder></h3>
+          <p>
+            brand: <placeholder id="prd2_brand"></placeholder><br />
+            category: <placeholder id="prd2_cat"></placeholder><br />
+          </p>
+        </div>
+      </div>
+      <div class="product">
+        <button id="product3">
+          <img
+          id="prd3_img"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+          alt="Product 3"
+          />
+        </button>
+        <div>
+          <h2 id="prd3_name">Product 3</h2>
+          <h3>price: $<placeholder id="prd3_price"></placeholder></h3>
+          <p>
+            brand: <placeholder id="prd3_brand"></placeholder><br />
+            category: <placeholder id="prd3_cat"></placeholder><br />
+          </p>
+        </div>
+      </div>
+      <div class="product">
+        <button id="product4">
+          <img
+            id="prd4_img"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+            alt="Product 4"
+          />
+        </button>
+        <div>
+          <h2 id="prd4_name">Product 4</h2>
+          <h3>price: $<placeholder id="prd4_price"></placeholder></h3>
+          <p>
+            brand: <placeholder id="prd4_brand"></placeholder><br />
+            category: <placeholder id="prd4_cat"></placeholder><br />
+          </p>
+        </div>
+      </div>
+      <div class="product">
+        <button id="product5">
+          <img
+          id="prd5_img"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+            alt="Product 5"
+          />
+        </button>
+        <div>
+          <h2 id="prd5_name">Product 5</h2>
+          <h3>price: $<placeholder id="prd5_price"></placeholder></h3>
+          <p>
+            brand: <placeholder id="prd5_brand"></placeholder><br />
+            category: <placeholder id="prd5_cat"></placeholder><br />
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+    <!-- FORM -->
+    <section class="container" id="form">    
+      <aside>
+        <img id="prd_img" src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Product">
+        <div>
+          <section><h2 id="prd_name">Product</h2>
+            <h3>price: $<placeholder id="prd_price"></placeholder></h3>
+            <p>brand: <placeholder id="prd_brand"></placeholder><br>
+              category: <placeholder id="prd_cat"></placeholder><br>
+              Available colors: <placeholder id="colors"></placeholder>
+            </p>
+          </section>  
+        </aside>
+        <form>
+            <label for="payment">Payment method:</label><br>
+            <div class="radio-container">
+
+              <label for="cash">Cash</label>
+              <input type="radio" id="cash" name="payment" value="cash">
+            </div>
+            <div class="radio-container">
+            <label for="card">Card</label>
+            <input type="radio" id="card" name="payment" value="card">
+            </div>
+            <div class="input_container">
+            <label for="name_input">Name & Surname</label><br>
+            <input id="name_input"/>
+        </div>
+        <div class="input_container">
+            <label for="pickup_input">Pickup point</label><br>
+            <input id="pickup_input"/>
+        </div>
+        <label for="pickup_date">Pickup date</label><br>
+        <input type="date" id="pickup_date" name="pickup_date">   
+        <p id="error">Incorrect data!</p>
+        <!-- ACCESSORIES -->
+        <h2>Accessories:</h2>
+        <ul>
+          <li>
+            <div class="accessorie">
+              <div>
+                <h3>Makeup sponge</h3>
+                <p>$6.00</p>
+                <button id="acc1">Add to Cart</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accessorie">
+              <div>
+                <h3>Foundation brush</h3>
+                <p>$7.00</p>
+                <button id="acc2">Add to Cart</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <h2>Final price: $<placeholder id="f_price"></placeholder></h2>
+        <button id="submit">Buy</button>
+        <button id="back">Back to products</button>
+      </form>
+      </section>
+      <!-- SUMMARY -->
+    <section class="container" id="thanks">
+        <h2>Thank you for shopping with MakeYouUp</h2>
+        <img id="final_img" src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Product">
+        <h3>Your purchase: <placeholder id="final_name">product</placeholder> in color <placeholder id="final_color">color</placeholder>.</h3>
+        <h3>You chose to pay  $<placeholder id="final_cost">total cost</placeholder> by <placeholder id="final_method">payment method</placeholder>.</h3>  
+    </section>
+  </body>
+</html>

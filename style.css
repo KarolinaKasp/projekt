@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffefef;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product img {
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin-right: calc(20% - 20px);
+  margin-top: 0%;
+  width: calc(30% - 20px);
+  order: 1;
+}
+
+form {
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+.input_container {
+  margin-bottom: 15px;
+}
+
+input[type="date"],
+#pickup_input,
+#name_input {
+  width: calc(70% - 10px);
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.radio-container label {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.radio-container input[type="radio"] {
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.accessorie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#thanks {
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 3px;
+  border: 1px solid white;
+  max-width: fit-content;
+}
+
+button:hover {
+  background-color: #f3d0d7;
+  color: black;
+}
+
+button:focus {
+  outline: none;
+}
+
+#final_img {
+  max-width: 200px;
+  width: auto;
+  height: auto;
+}
+
+#prd_img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding-right: 20px;
+  margin-right: 20px;
+}
