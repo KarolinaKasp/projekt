@@ -116,7 +116,29 @@
           </section>  
         </aside>
         <form>
-            <label for="payment">Payment method:</label><br>
+          <!-- ACCESSORIES -->
+          <h2>Accessories:</h2>
+          <ul>
+            <li>
+              <div class="accessorie">
+                <div>
+                  <h3>Makeup sponge</h3>
+                  <p>$6.00</p>
+                  <button id="acc1">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="accessorie">
+                <div>
+                  <h3>Foundation brush</h3>
+                  <p>$7.00</p>
+                  <button id="acc2">Add to Cart</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+            <label for="payment">Payment method:</label>
             <div class="radio-container">
 
               <label for="cash">Cash</label>
@@ -134,31 +156,9 @@
             <label for="pickup_input">Pickup point</label><br>
             <input id="pickup_input"/>
         </div>
-        <label for="pickup_date">Pickup date</label><br>
+        <label for="pickup_date">Pickup date</label>
         <input type="date" id="pickup_date" name="pickup_date">   
         <p id="error">Incorrect data!</p>
-        <!-- ACCESSORIES -->
-        <h2>Accessories:</h2>
-        <ul>
-          <li>
-            <div class="accessorie">
-              <div>
-                <h3>Makeup sponge</h3>
-                <p>$6.00</p>
-                <button id="acc1">Add to Cart</button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="accessorie">
-              <div>
-                <h3>Foundation brush</h3>
-                <p>$7.00</p>
-                <button id="acc2">Add to Cart</button>
-              </div>
-            </div>
-          </li>
-        </ul>
         <h2>Final price: $<placeholder id="f_price"></placeholder></h2>
         <button id="submit">Buy</button>
         <button id="back">Back to products</button>
